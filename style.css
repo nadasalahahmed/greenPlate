@@ -1,0 +1,592 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+    margin: 0;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+
+.nav-container {
+    display: flex; 
+    align-items: center; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 2%; 
+}
+
+.currPage{
+    font-size: 1.3vw;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #77d658, #67b84c);
+    color: rgb(0, 0, 0);
+    display: inline-flex;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+    text-decoration: none;
+    margin-top: 3%;
+}
+
+.btn1 {
+    margin-top: 3%;
+    display: block;
+    position: relative;
+    font-size: 1.3vw;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #77d658, #67b84c);
+    color: ghostwhite;
+    overflow: hidden;
+}
+ 
+
+.btn1 span {
+    position: relative;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+    color: #ffffff;
+}
+
+
+
+.btn1::before,.btn1::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.btn1::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.6s;
+}
+
+.btn1:hover::before {
+    transform: translate3d(100%, 0, 0); 
+}
+
+.nav-container img {
+    max-width: 6%; 
+    margin: 1rem 3rem;
+}
+
+
+.logo{
+    margin-right: 3%;
+    color: #5EA347
+}
+
+.contant{
+    justify-content:center;
+    align-items: center;
+    display:flex;
+}
+
+.vegImg {
+    max-width: 35%;
+}
+
+.txt{
+    font-size: 1vw;
+    padding: 10vw;
+}
+
+
+
+.contant2{
+    background-color: #5EA347;
+}
+
+.allkinds{
+    text-align: center;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content:center;
+    gap: 1.5%;
+    padding: 3% 3%;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.452); 
+}
+
+.boxs {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1.5%;
+}
+
+.boxs:hover{
+    border: 2px solid #67b84c;
+    box-shadow: 1px 2px 10px .5px #67b84c;
+}
+
+.Img{
+    vertical-align: middle;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.boxTxt {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.5vw;
+    background: rgba(0, 0, 0, 0.555); 
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+section {
+    text-align: center;
+    background-color: beige;
+    padding: 3%;
+}
+
+section .title {
+    font-size: 3vw;
+    font-weight: bold;
+    padding-top: 50px;
+}
+
+section .subtitle {
+    font-size: 2vw;
+    margin-top: 20px;   
+    margin-bottom: 50px;
+}
+
+.slide-containers{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content:center;
+    gap: 1.5%;
+    padding: 5% 3%;
+}
+
+.boxs2 {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 1.5%;
+
+    display: grid;
+    grid-template-rows: repeat(2, 55%);
+    gap: 3%;
+}
+
+.boxs2:hover{
+    border: 2px solid #67b84c;
+    box-shadow: 1px 2px 10px .5px #67b84c;
+}
+
+.num {
+    font-size: 1.2vw;
+    width: 100%;
+
+}
+
+
+.label {
+    background-image: linear-gradient(rgba(22, 22, 22, 0.637), rgba(22, 22, 22, 0.582)),url("./images/food/2ndback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 70vh;
+    align-items: center;
+}
+.words {
+    color: white;
+    text-align: center;
+    padding: 6vw;
+}
+.words1 {
+    font-size: 2vw;
+    padding-top: 2.5vw;
+}
+
+.words2 {
+    font-size: 5vw;
+    padding-top: 2.5vw;
+}
+
+.words2 span {
+    color: red;
+}
+
+.words3 {
+    font-size: 2vw;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+
+
+section {
+   background-color: beige;
+}
+
+.grids{
+    background-color: beige;
+    justify-content: center;
+    padding: 5% 10% 5% 10%;
+}
+
+.grid_container {
+    padding: 0 10% 0 10%; 
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto; 
+    grid-template-areas:
+        "item1 item1 item1 item2 item2 item2"
+        "item3 item3 item4  item4 item5 item5";
+
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.sale1 {
+    grid-area: item1;
+    background-image: linear-gradient(rgba(236, 224, 224, 0.274), rgba(243, 243, 243, 0.74), black), url("./images/food/salad.jpg");
+    max-width: 100%; 
+    height: 35vh;
+    padding-top: 6%;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+
+.sale2 {
+    grid-area: item2;
+    background-image: linear-gradient(rgba(236, 224, 224, 0.274), rgba(243, 243, 243, 0.74), black), url("./images/food/salad.jpg");
+    max-width: 100%; 
+    height: 35vh;
+    padding-top: 6%;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+.sale3 {
+    grid-area: item3;
+    background-image: linear-gradient(rgba(236, 224, 224, 0.274), rgba(243, 243, 243, 0.74), black), url("./images/food/salad.jpg");
+    max-width: 100%; 
+    height: 35vh;
+    padding-top: 6%;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+
+.sale4 {
+    grid-area: item4;
+    background-image: linear-gradient(rgba(236, 224, 224, 0.274), rgba(243, 243, 243, 0.74), black), url("./images/food/salad.jpg");
+    max-width: 100%; 
+    height: 35vh;
+    padding-top: 6%;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+
+
+.sale5 {
+    grid-area: item5;
+    background-image: linear-gradient(rgba(236, 224, 224, 0.274), rgba(243, 243, 243, 0.74), black), url("./images/food/salad.jpg");
+    max-width: 100%; 
+    height: 35vh;
+    padding-top: 6%;
+    background-position: center;
+    background-size: cover;    
+    align-content: center;
+}
+
+.text{
+    padding: 2%;
+    font-size: 1.5vw;
+    color: ghostwhite;
+    text-shadow: 0 0 10px #000000, 0 0 3px #000000;
+}
+
+
+.formcart {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 5%    
+}
+
+.formcart .information span {
+    color: red;
+}
+
+.formcart .information {
+    margin: 2%;
+}
+
+.formcart .information .font {
+    font-size: 1.5vw;
+}
+
+.formcart .information .font2 {
+    font-size: 1.5vw;
+}
+
+.formcart .signin form input {
+    max-width: 50vw;
+    height: 5vh;
+    border: .2vw solid black;
+    border-radius: 2px;
+    box-shadow: -2px -2px 3px #44444479, 2px 2px 3px #22222256, inset 2px 2px 3px #4444443f,
+    inset -2px -2px 3px #22222242;
+}
+
+.formcart .signin form botton {
+  margin: 12px;
+  height: 70px;
+  width: 150px;
+  border-radius: 4px;
+  background: #333;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -2px 3px #44444479, 2px 2px 3px #22222256, inset 2px 2px 3px #4444443f,
+    inset -2px -2px 3px #22222242;
+  font-family: "Damion", cursive;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+}
+.formcart .signin form botton:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
+}
+
+footer {
+    background-color: beige;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding: 2% 10%;
+}
+
+footer .access1 .footerLogo {
+    max-width: 15%;
+}
+
+footer .access1 {
+    font-size: 1.5vw;
+    padding: 30px 0;
+}
+
+footer .access1 .Follow {
+    display: grid;
+    grid-template-columns: repeat(4, .1fr);
+    grid-template-rows: auto;
+    padding-top: 5%;
+    gap: 6%;
+    align-items: center;
+}
+
+footer .access1 .Follow img {
+    max-width: 110%;
+}
+
+
+footer .access2 {
+    font-size: 1.5vw;
+    padding: 30px 0;
+    text-decoration: none;
+}
+
+footer .access4 {
+    font-size: 20px;
+    padding: 30px 0;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+.appImgs {
+    max-width: 35%;
+    padding-top: 5%;
+}
+
+.cards-grid{
+    display: grid;
+    grid-template-columns: repeat(3, .1fr);
+    grid-template-rows: auto;
+    padding-top: 5%;
+    gap: 20%;
+    align-items: center;
+}
+
+.cardsImgs {
+    width: 250%;
+    padding-top: 3%;
+}
+
+footer .access2 p a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.btn2{
+    display:block;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    width: 250px;
+    transform: scale(0.85);
+}
+
+.btn2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 120%;
+    background: linear-gradient(
+      115deg,
+      #00ff15,
+      #ffee00,
+      #0f9e33,
+      #ff7b00
+    );
+    background-size: 25% 100%;
+    animation: border-animation 0.75s linear infinite;
+    animation-play-state:running;
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+}
+  
+.btn2:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+}
+  
+@keyframes border-animation {
+    to {
+      transform: translateX(-25%);
+    }
+}
+  
+.btn2 span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 2vw;
+    background: #fff;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.btn2 a span:hover{
+    background-color: rgba(240, 237, 237, 0.849);
+}
+  
+.btn2 a {
+    text-decoration: none;
+    color: #000;
+}
+  
+
+.btn3 {
+    font-size: 1rem;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 3px 3px #fafafab6;
+    cursor: pointer;
+    border: none;
+    margin: 2%;
+}
+
+.btn3:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+
+.btn3:hover {
+    box-shadow: 3px 3px #000000b6;;
+    background-color: #fffd7688;
+}
+
+
+.btn4 {
+    background-color: #ffffff;
+    border: .2vw solid black;
+    cursor: pointer;
+    padding: 10px 16px;
+    font-size: 1.2vw;
+    color: #000;
+    box-shadow: 2px 4px #48b30a;  
+}
+
+.btn4:hover {
+    background-color: #0000000a;
+ 
+}
