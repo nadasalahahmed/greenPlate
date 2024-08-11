@@ -231,7 +231,8 @@ section .subtitle {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 70vh;
+    max-width: 100%;
+    max-height: 100%;
     align-items: center;
 }
 .words {
